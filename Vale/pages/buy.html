@@ -1,0 +1,123 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../assets/css/buy.css">
+</head>
+
+<body>
+  <div class="wrapper" id="app">
+    <div class="card-form">
+      <div class="card-list">
+        <div class="card-item" v-bind:class="{ '-active' : isCardFlipped }">
+
+          <div class="credit">
+            <div class="credit-sub">
+             <div style="width: 60%; position : absolute; top: 00%;left: 00%;">
+              <img src="../assets/images/image2vector(1).png" width="100px" alt="">
+              <br>
+              <span style="font-family: fontm;font-weight: bold;font-size: 20px;"id="amount">05 000 SOL</span>
+              <br>
+              <span style="font-family: fontm;font-weight: bold;font-size: 20px;" id="uget">10000000 VEL</span>
+
+             </div>
+             <div >
+                <div style=" transform: rotate(90deg); position: absolute;
+                top:20%;
+                left: 70%;">
+                 <span style="font-size: 50px;font-family: fontu;">VEL</span>
+          
+                 </div>
+             </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="card-item__side -back">
+            <div class="card-item__cover">
+              <img
+                v-bind:src="'https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/' + currentCardBackground + '.jpeg'"
+                class="card-item__bg">
+            </div>
+            <div class="card-item__band"></div>
+            <div class="card-item__cvv">
+              <div class="card-item__cvvTitle">CVV</div>
+              <div class="card-item__cvvBand">
+                <span v-for="(n, $index) in cardCvv" :key="$index">
+                  *
+                </span>
+
+              </div>
+              <div class="card-item__type">
+                <img
+                  v-bind:src="'https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/' + getCardType + '.png'"
+                  v-if="getCardType" class="card-item__typeImg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="card-form__inner">
+
+        <div style="text-align: center;">
+          <button class="sell">
+            Buy Velyrian Coin
+
+          </button>
+          <button class="sell">
+            Sell Velyrian Coin
+          </button>
+        </div>
+
+
+
+        <div class="card-input">
+          <label for="cardNumber" class="card-input__label">You Pay(Solana)</label>
+          <input type="number" max="100000000"pattern="[0-9]+" id="cardNumber" class="card-input__input" v-mask="generateCardNumberMask"
+            v-model="cardNumber" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardNumber" autocomplete="off" >
+        </div>
+
+
+        <div class="style_switch-block__5OW3B">
+          <button style="background-color: #0c1e27;border:0px;margin-bottom: 10px;">
+            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.888916 3.22266L3.11112 1.00045L5.33333 3.22266 M3.11108 10.7773L3.11108 0.999619"
+                stroke="#bdff00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+              <path d="M13.1112 8.77779L10.889 11L8.66675 8.77779 M10.8889 1.22228L10.8889 11" stroke="#bdff00"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              </path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="card-input">
+          <label for="cardName" class="card-input__label">You Recieve(Velyrian)</label>
+          <input type="number" max="100000000" id="cardName" class="card-input__input" v-model="cardName" v-on:focus="focusInput"
+            v-on:blur="blurInput" data-ref="cardName" autocomplete="off">
+        </div>
+
+
+        <button class="card-form__button"
+          Submit
+        </button </div>
+      </div>
+
+      <a href="https://github.com/muhammederdem/credit-card-form" target="_blank" class="github-btn">
+        Connect To Wallet
+      </a>
+    </div>
+  <script src="../assets/js/buy.js"></script>
+</body>
+
+</html>

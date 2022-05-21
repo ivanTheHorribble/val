@@ -1,0 +1,160 @@
+<html>
+  <head>
+
+
+
+    <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="shortcut icon" href="../assets/images/logo.png" type="image/png" />
+  <title>Valyiran coin - A crypto coin for its community</title>
+  <meta name="description"
+    content="Valyrian Coin is the first crypto-Community based coin, which implies that the coin's faith is decided by the coin's holders." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:e" content="Valyrian Coin - Future of crypto" />
+  <meta property="og:description"
+    content="Valyrian Coin is the first crypto-Community based coin, which implies that the coin's faith is decided by the coin's holders." />
+  <meta property="og:image" content="../assets/images/main.png" />
+  <meta property="og:url" content="https://valyrian.me/" />
+  <meta property="og:site_name" content="VALYRIAN COIN" />
+
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Valyrian coin - Future of crypto" />
+  <meta name="twitter:description"
+    content="Valyrian Coin is the first crypto-Community based coin, which implies that the coin's faith is decided by the coin's holders." />
+  <meta name="twitter:image" content="../asseta/images/main.png" />
+  <meta name="twitter:image:width" content="1024" />
+  <meta name="twitter:image:height" content="512" />
+
+  <link rel="canonical" href="https://valyrian.me/" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+  <link href="../assets/css/main.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="../assets/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+    <link href="../assets/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="../assets/css/pass.css" />
+  </head>
+  <body style="background-image:url('../assets/images/pass-bg.jpg');background-position: center;background-repeat: no-repeat; background-size: cover; color: #fff;" onload="draw();">
+    <div class="wrapper" id="app">
+      <div class="card-form">
+        <div class="card-list">
+          <div class="card-item"  >
+            <div class="card-item__side -front" style="background-color: #bbff00;" >
+              <div class="card-item__focus" v-bind:class="{'-active' : focusElementStyle }" v-bind:style="focusElementStyle" ref="focusElement"></div>
+            
+              <span id="help" data-tooltip-content="#help-content"></span>
+
+              
+              <div class="card-item__wrapper">
+               
+                  
+          <span style=" font-family: Ancient; font-size: 30px;padding-left: 30%; opacity: 0.5;" >
+            VELYRIA STATE
+         
+          </span>
+
+        
+              
+                <div style="height: 100%;  text-transform: uppercase; text-align: center;">
+                   <img src="../assets/images/image2vector(1).svg" alt="" style= "width: 100%; height: 250px;">
+                  <span id="nameOut" style="font-family: Money;color: #fff;font-size: 30px;opacity:0.5;">CITIZN NAME</span>
+                   </div>
+                  
+                  
+                    
+                   
+                  
+              
+              </div>
+            </div>
+           
+            </div>
+          </div>
+        </div>
+        <div class="card-form__inner">
+          <div class="card-input" style="width: 100%;">
+            <div class="dropdown">
+            <label for="cardNumber" class="card-input__label" style="display: inline-flex">Name of the citizin &nbsp;
+             <i class="fas fa-info-circle"></i>
+            <p class="dropdown-content">This is what the your name will be in VELYRIA STATE. it can only contain alphabtic characters, unupropraite names are not allowed</p>
+            </div>
+            </label>
+            <input type="text" id="name" class="card-input__input" v-mask="generateCardNumberMask" v-model="cardNumber" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardNumber" autocomplete="off" oninput="namer()" minlength="4" maxlength="20">
+       <h6 id="name-an">only english alphabtic letters are allowed</h6>
+          </div>
+          <div class="card-input">
+            <div class="dropdown">
+            <label for="cardName" class="card-input__label">Account Email
+              <i class="fas fa-info-circle"></i>
+                <p class="dropdown-content">Make sure this is your email Because we are going to mail you a code there</p>
+                </div>
+            </label>
+            
+           
+            <input type="text" id="cardName" class="card-input__input" v-model="cardName" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardName" autocomplete="off">
+          </div>
+
+
+          <div class="card-input">
+            <div class="dropdown">
+            <label for="cardName" class="card-input__label">Password
+              <i class="fas fa-info-circle"></i>
+                <p class="dropdown-content">Make sure this is your email Because we are going to mail you a code there</p>
+                </div>
+            </label>
+            
+           
+            <input type="text" id="cardName" class="card-input__input" v-model="cardName" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardName" autocomplete="off">
+            <h6 style="color:gray"><i class="fas fa-check" id="check1"></i> 8 charachters at least</h5>
+
+            
+            <h6 style="color:gray"><i class="fas fa-check" id="check1"></i> 1 symbol at least ex:(@,#,%)</h5>
+
+         
+         
+             <h6 style="color:gray"><i class="fas fa-check" id="check1"></i> 1 number at least</h5>
+            
+          </div>
+
+
+         <div style="text-align: center;">
+           <span>Velyria Citizen cost:</span>
+           <span style="color: #bbff55;">150 VEL</span>
+           <br>
+           <span>  Dont have VELYRIAN COIN?"<a style="color: #bbff55;" href="../buy.html">BUY NOW</a></span>
+         
+
+         </div>
+         
+            
+  
+          <button class="card-form__button" style="color: black; font-size:30px; letter-spacing: 3px;">
+            GET CITIZNSHIP
+          </button>
+        </div>
+      </div>
+      
+     
+    </div>
+    <script src="../assets/js/pass.js"></script>
+  </body>
+</html>
